@@ -9,32 +9,42 @@
         <Title text="New Customer Profile" level="H2" class="welcome" />
         <Text text="Please enter details" level="H4" class="select" />
 
-        <FlexBox direction="Row" class="sapUiLargeMarginBegin" width="33%">
-            <Input placeholder="Title" width="100%" class="myInput" />
-            <Input placeholder="Name" width="100%" class="myInput" />
-            <Input placeholder="Surname" width="100%" class="myInput" />
+        <FlexBox direction="Row" class="sapUiLargeMarginBegin" width="100%">
+            <ComboBox
+                id="titleComboBox" 
+                class="myComboBox"
+                placeholder="Title"
+                required="true"
+            >
+                <core:Item key="MR" text="MR." />
+                <core:Item key="MRS" text="MRS." />
+                <core:Item key="MS" text="MS" />
+            </ComboBox>
+            <Input placeholder="Name" width="100%" class="myInput customSpacing"  id="nameInput" required="true" />
+            <Input placeholder="Surname" width="100%" class="myInput customSpacing"  id="surnameInput" required="true" />
         </FlexBox>
 
-        <FlexBox direction="Row" class="sapUiSmallMarginBegin" width="33%">
-            <Input placeholder="Email Address" width="100%" class="myInput" />
-            <ComboBox width="100%" class="myComboBox" placeholder="Country code">
+        <FlexBox direction="Row" class="sapUiSmallMarginBegin" width="100%">
+            <Input placeholder="Email Address" width="100%" class="myInput customSpacing"  id="emailInput" required="true" />
+            <ComboBox width="100%" class="myComboBox" placeholder="Country code" id="countryCodeComboBox" required="true">
                 <items>
                     <core:Item key="US" text="United States" />
                     <core:Item key="CA" text="Canada" />
                     <core:Item key="IND" text="India" />
                 </items>
             </ComboBox>
-            <Input placeholder="Mobile Number" width="100%" class="myInput" />
+            <Input placeholder="Mobile Number" width="100%" class="myInput customSpacing"  id="mobileNumberInput" required="true" />
         </FlexBox>
 
-        <FlexBox direction="Row" class="sapUiSmallMarginBegin" width="33%">
+        <FlexBox direction="Row" class="sapUiSmallMarginBegin" width="100%">
             <DatePicker
                 placeholder="Date of Birth"
                 width="100%"
-                class="myInput"
+                class="myInput customSpacing" 
                 id="dateOfBirthDatePicker"
+                required="true"
             />
-            <Input placeholder="Customer Address" width="100%" class="myInput" />
+            <Input placeholder="Customer Address" width="100%" class="myInput customSpacing"  id="customerAddressInput" />
         </FlexBox>
 
         <Text

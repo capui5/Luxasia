@@ -201,4 +201,7 @@ span#__tile4-title-inner {
     border-radius: 50px;
     margin-right: 10px;
   }
+.customSpacing {
+    margin: 50px;
+}
 /*new customer*/
