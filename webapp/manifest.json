@@ -1,0 +1,165 @@
+{
+  "_version": "1.58.0",
+  "sap.app": {
+    "id": "luxasia",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.11.2",
+      "toolsId": "5281f5d6-b98c-4550-880b-b78b6cfdb951"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.119.1",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.f": {},
+        "sap.suite.ui.generic.template": {},
+        "sap.ui.comp": {},
+        "sap.ui.generic.app": {},
+        "sap.ui.table": {},
+        "sap.ushell": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "luxasia.i18n.i18n"
+        }
+      },
+      "storeModel": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/storeData.json"
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "luxasia.view",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "clearControlAggregation": false
+      },
+      "routes": [
+        {
+          "name": "Routestoreselection",
+          "pattern": ":?query:",
+          "target": [
+            "Targetstoreselection"
+          ]
+        },
+        {
+          "name": "brandselection",
+          "pattern": "brandselection",
+          "target": [
+            "brandselection"
+          ]
+        },
+        {
+          "name": "mainmenu",
+          "pattern": "mainmenu",
+          "target": [
+            "mainmenu"
+          ]
+        },
+        {
+          "name": "brand",
+          "pattern": "brand",
+          "target": [
+            "brand"
+          ]
+        },
+        {
+          "name": "newcustomer",
+          "pattern": "newcustomer",
+          "target": [
+            "newcustomer"
+          ]
+        }
+      ],
+      "targets": {
+        "Targetstoreselection": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "storeselection",
+          "viewName": "storeselection"
+        },
+        "brandselection": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "brandselection",
+          "viewName": "brandselection"
+        },
+        "mainmenu": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "mainmenu",
+          "viewName": "mainmenu"
+        },
+        "brand": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "brand",
+          "viewName": "brand"
+        },
+        "newcustomer": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "newcustomer",
+          "viewName": "newcustomer"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "luxasia.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "App"
+    }
+  }
+}

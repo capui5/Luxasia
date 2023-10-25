@@ -1,0 +1,51 @@
+<mvc:View
+    controllerName="luxasia.controller.newcustomer"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <VBox class="sapUiLargeMargin">
+        <Title text="New Customer Profile" level="H2" class="welcome" />
+        <Text text="Please enter details" level="H4" class="select" />
+
+        <FlexBox direction="Row" class="sapUiLargeMarginBegin" width="33%">
+            <Input placeholder="Title" width="100%" class="myInput" />
+            <Input placeholder="Name" width="100%" class="myInput" />
+            <Input placeholder="Surname" width="100%" class="myInput" />
+        </FlexBox>
+
+        <FlexBox direction="Row" class="sapUiSmallMarginBegin" width="33%">
+            <Input placeholder="Email Address" width="100%" class="myInput" />
+            <ComboBox width="100%" class="myComboBox" placeholder="Country code">
+                <items>
+                    <core:Item key="US" text="United States" />
+                    <core:Item key="CA" text="Canada" />
+                    <core:Item key="IND" text="India" />
+                </items>
+            </ComboBox>
+            <Input placeholder="Mobile Number" width="100%" class="myInput" />
+        </FlexBox>
+
+        <FlexBox direction="Row" class="sapUiSmallMarginBegin" width="33%">
+            <DatePicker
+                placeholder="Date of Birth"
+                width="100%"
+                class="myInput"
+                id="dateOfBirthDatePicker"
+            />
+            <Input placeholder="Customer Address" width="100%" class="myInput" />
+        </FlexBox>
+
+        <Text
+            text="By submitting the form, you agree that the Luxasia Group of companies."
+            class="sapUiTinyMarginTop sapUiSmallMarginBegin"
+        />
+
+        <Button
+            text="Create New Profile"
+            press="onCreateProfile"
+            class="sapUiSmallMarginBegin sapUiSmallMarginTop"
+        />
+    </VBox>
+</mvc:View>

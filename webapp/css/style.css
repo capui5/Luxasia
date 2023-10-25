@@ -1,0 +1,204 @@
+/*Store selection page*/
+.welcome {
+    line-height: 1.5;
+    word-spacing: 5px;
+    text-align: center;
+    color: #000 !important;
+}
+.select{
+    padding: 10px;
+    text-align: center;
+}
+span#__title0-inner {
+    color: black;
+    line-height: 1.5;
+    word-spacing: 5px;
+    padding-top: 5px;
+}
+span#__button0-inner {
+    background-color: rgb(167, 233, 229);
+    color: white;
+    border-color: rgb(167, 233, 229);
+    border-radius: 50px;
+    height: 50px;
+    padding: 12px;
+}
+span#__button0-inner:hover {
+   
+    border-color:  rgb(139, 194, 190);
+    background-color: rgb(139, 194, 190);;
+}
+span#__button0-img {
+    color: white;
+}
+.wide-select {
+    width: 250px;
+    height: 150px;
+    
+}
+.wide-select .sapMInputBase {
+    border-radius: 50px; 
+}
+.wide-button {
+
+    width: 250px;
+    border-radius: 100rem;
+    padding-right: 20px;
+}
+.wide-select .sapMComboBoxPicker {
+    background-color: #c22727; 
+}
+span#__text0{
+    line-height: 1.5;
+    word-spacing: 5px;
+    padding-top: 15px;
+}
+.sapMBtnInner.sapMBtnText .sapMBtnIcon:before {
+    width: 1rem;
+    text-align: center;
+    display: inline-block;
+    color: white;
+}
+/*store selection page*/
+/*Customer Search*/
+div#__bar0 {
+    background-color: #000;
+    height: 3rem;
+    padding: 20px;
+}
+span#__button1-inner {
+    background-color: transparent;
+}
+span#__button1-img {
+    color: white;
+}
+span#__text2 {
+    padding-top: 15px;
+    color: white;
+    font-size: larger;
+}
+span#__button2-inner {
+    background-color: rgb(117, 194, 193);
+    border-radius: 50px;
+}
+bdi#__button2-BDI-content {
+    color: white;
+}
+span#__button3-inner {
+    color: white;
+    background-color: rgb(35, 194, 194);
+    border-radius: 50px;
+    height: 40px;
+    padding: 7px;
+}
+span#__button3-inner:hover {
+    background-color: rgb(41, 146, 146);
+    border-color:rgb(41, 146, 146) ;
+}
+.flex-spacing{
+    padding-top: 4rem;
+    justify-content: space-around;
+}
+.sapUiSizeCompact .sapMBtn {
+    height: 3rem;
+    padding: 1.1875rem 0;
+}
+
+button#__button3 {
+    padding-top: 10px;
+    border-radius: 5%;
+}
+.custom-input-container .sapMInputBase input {
+    border-radius: 100rem;
+}
+button#__button2 {
+    padding-right: 30px;
+}
+div#application-luxasia-display-component---brandselection--emailInput-content {
+    height: 40px;
+    border-bottom: none;
+    border-radius: 50px;
+}
+div#application-luxasia-display-component---brandselection--mobileInput-content {
+    height: 40px;
+    border-radius: 50px;
+}
+div#application-luxasia-display-component---brandselection--nameInput-content {
+    height: 40px;
+    border-radius: 50px;
+}
+div#application-luxasia-display-component---brandselection--surnameInput-content {
+    height: 40px;
+    border-radius: 50px;
+}
+/*Customer Search*/
+/*Main Menu*/
+span#__title1-inner {
+    color: black;
+    line-height: 1.5;
+    word-spacing: 5px;
+    padding-top: 5px;
+}
+.hero-container {
+    background: linear-gradient(to bottom, #000, #646363);
+    height: 50vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white !important;
+    
+}
+
+span#__text1{
+    color: #90eef099;
+    line-height: 1.5;
+    word-spacing: 5px;
+}
+
+.tile-container{
+    justify-content: space-around;
+    margin-top: -70px;
+    height: 100rem; 
+}
+/*Generic tile*/
+span#__tile0-title-inner {
+    text-align: center;
+    padding-top: 6rem;
+}
+span#__tile1-title-inner {
+    text-align: center;
+    padding-top: 6rem;
+}
+span#__tile2-title-inner {
+    text-align: center;
+    padding-top: 6rem;
+}
+span#__tile3-title-inner {
+    text-align: center;
+    padding-top: 6rem;
+}
+span#__tile4-title-inner {
+    text-align: center;
+    padding-top: 6rem;
+}
+/*Generic tiles icon*/
+.sapMImageContentImageIcon.sapUiIcon {
+    font-size: 1.75rem;
+    color: #556b82;
+    padding-bottom: 10.675rem;
+    position: relative;
+}
+/*Main Menu*/
+/*new customer*/
+/* styles.css */
+.myInput {
+    border-radius: 50px;
+    margin-right: 10px;
+  }
+  
+  .myComboBox {
+    border-radius: 50px;
+    margin-right: 10px;
+  }
+/*new customer*/

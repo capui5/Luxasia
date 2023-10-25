@@ -1,0 +1,72 @@
+<mvc:View
+    controllerName="luxasia.controller.mainmenu"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <VBox class="hero-container">
+        <Text
+            text="WELCOME TEST"
+            level="H4"
+            class="welcome1"
+        />
+        <Text
+            text="WHAT WOULD YOU LIKE TO DO?"
+            level="H2"
+            class="select1"
+        />
+    </VBox>
+
+    <HBox class="tile-container">
+        <GenericTile
+            class="tileLayout"
+            header="SEARCH FOR CUSTOMERS"
+            press="press"
+        >
+            <TileContent>
+                <ImageContent src="sap-icon://search" />
+            </TileContent>
+        </GenericTile>
+
+        <GenericTile
+            class="tileLayout"
+            header="CREATE NEW PROFILE"
+            press="press"
+        >
+            <TileContent>
+                <ImageContent src="sap-icon://employee" />
+            </TileContent>
+        </GenericTile>
+
+        <GenericTile
+            class="tileLayout"
+            header="CASH AND CARRY"
+            press="press"
+        >
+            <TileContent>
+                <ImageContent src="sap-icon://cart-3" />
+            </TileContent>
+        </GenericTile>
+
+        <GenericTile
+            class="tileLayout"
+            header="TODAY'S TRANSACTION"
+            press="press"
+        >
+            <TileContent>
+                <ImageContent src="sap-icon://credit-card" />
+            </TileContent>
+        </GenericTile>
+
+        <GenericTile
+            class="tileLayout"
+            header="CONTACT LIST"
+            press="press"
+        >
+            <TileContent>
+                <ImageContent src="sap-icon://contacts" />
+            </TileContent>
+        </GenericTile>
+    </HBox>
+</mvc:View>
