@@ -9,7 +9,7 @@ sap.ui.define([
       onCreateProfile: function () {
         var view = this.getView();
         var requiredFields = [
-            view.byId("titleComboBox"),
+            view.byId("titleInput"),
             view.byId("nameInput"),
             view.byId("surnameInput"),
             view.byId("emailInput"),
@@ -38,7 +38,7 @@ sap.ui.define([
         }
     
         var newProfile = {
-            title: view.byId("titleComboBox").getSelectedKey(),
+            title: view.byId("titleInput").getSelectedKey(),
             name: view.byId("nameInput").getValue(),
             surname: view.byId("surnameInput").getValue(),
             email: view.byId("emailInput").getValue(),

@@ -6,7 +6,7 @@ sap.ui.define([
 ], function (Controller, MessageToast, History, UIComponent) {
   "use strict";
 
-  return Controller.extend("luxasia.controller.brandselection", {
+  return Controller.extend("luxasia.controller.customersearch", {
     onInit: function () { },
     //Nav Back start//
     getRouter: function () {
@@ -26,6 +26,12 @@ sap.ui.define([
       }
     },
     //nav back end//
+    //Create new profile//
+    onNextPage: function () {
+      var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+      oRouter.navTo("newcustomer");
+  },
+    //create new profile//
     //search//
     onSearch: function () {
       var mobileNumber = this.getView().byId("mobileInput").getValue();

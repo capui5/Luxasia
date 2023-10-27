@@ -61,6 +61,10 @@
       "storeModel": {
         "type": "sap.ui.model.json.JSONModel",
         "uri": "model/storeData.json"
+      },
+      "customerData": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/customerData.json"
       }
     },
     "resources": {
@@ -89,10 +93,10 @@
           ]
         },
         {
-          "name": "brandselection",
-          "pattern": "brandselection",
+          "name": "customersearch",
+          "pattern": "customersearch",
           "target": [
-            "brandselection"
+            "customersearch"
           ]
         },
         {
@@ -115,6 +119,13 @@
           "target": [
             "newcustomer"
           ]
+        },
+        {
+          "name": "calllist",
+          "pattern": "calllist",
+          "target": [
+            "calllist"
+          ]
         }
       ],
       "targets": {
@@ -125,12 +136,12 @@
           "viewId": "storeselection",
           "viewName": "storeselection"
         },
-        "brandselection": {
+        "customersearch": {
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
-          "viewId": "brandselection",
-          "viewName": "brandselection"
+          "viewId": "customersearch",
+          "viewName": "customersearch"
         },
         "mainmenu": {
           "viewType": "XML",
@@ -152,6 +163,13 @@
           "clearControlAggregation": false,
           "viewId": "newcustomer",
           "viewName": "newcustomer"
+        },
+        "calllist":{
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "calllist",
+          "viewName": "calllist"
         }
       }
     },

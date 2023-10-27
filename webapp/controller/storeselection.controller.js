@@ -9,7 +9,7 @@ sap.ui.define([
 
         onNextPagePress: function () {
             var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-            oRouter.navTo("brandselection");
+            oRouter.navTo("brand");
         }
     });
 });

@@ -14,7 +14,7 @@
             >
                 <content />
              
-            <Button text="Login" width="100%" press="onButtonPress" />
+            <Button text="Login" width="100%" press="onButtonPress" class="Login" />
        
             </Page>
         </masterPages>

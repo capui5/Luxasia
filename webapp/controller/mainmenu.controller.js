@@ -7,9 +7,17 @@ sap.ui.define([
     return Controller.extend("luxasia.controller.mainmenu", {
         onInit: function () {},
 
-        onNextPagePress: function () {
+        searchcustomer: function () {
             var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-            oRouter.navTo("brandselection");
+            oRouter.navTo("customersearch");
+        },
+        createprofile: function () {
+            var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+            oRouter.navTo("newcustomer");
+        },
+        contact: function () {
+            var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+            oRouter.navTo("calllist");
         }
     });
 });
