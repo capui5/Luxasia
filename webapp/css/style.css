@@ -387,17 +387,14 @@ div#application-luxasia-display-component---brand--splitContainer-Master {
 }
 /*Brand*/
 /*Newcustomer*/
-.myInput {
-    border-radius: 50px;
-    margin-right: 10px;
-}
-
 .Newcustomer {
+    padding: 10px;
     line-height: 1.5;
-    word-spacing: 2px;
     text-align: center;
-    color: #000 !important;
-    font-size: large;
+    color: #000;
+    font-size: larger;
+    font-weight: lighter;
+    word-spacing: 5px;
 }
 
 .pleaseenter {
@@ -405,17 +402,16 @@ div#application-luxasia-display-component---brand--splitContainer-Master {
     word-spacing: 2px;
     text-align: center;
     color: #000 !important;
-    padding: 10px;
     font-size: medium;
+    margin-bottom: 10px;
 }
 
 .pleaseenter1 {
     line-height: 1.5;
-    word-spacing: 2px;
     text-align: center;
     color: #000 !important;
     padding: 10px;
-    font-size: medium;
+    font-size: small;
     font-weight: lighter;
 }
 
@@ -443,7 +439,9 @@ div#application-luxasia-display-component---brand--splitContainer-Master {
 }
 
 .flexContainer {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    margin-left: 10px; 
+    margin-right: 10px; 
 }
 
 div#application-luxasia-display-component---newcustomer--titleInput-content {
@@ -493,10 +491,6 @@ div#application-luxasia-display-component---newcustomer--customerAddressInput-co
     border-radius: 30px;
     border: 2px solid white;
 }
-
-
-
-
 /* Mobile (up to 767px) */
 @media screen and (max-width: 767px) {
     .flexContainer {
