@@ -5,7 +5,15 @@
     xmlns="sap.m"
     xmlns:core="sap.ui.core"
 >
-
+ <!-- <HBox id="customNavBar" alignItems="Center" justifyContent="SpaceBetween">
+     
+        <Button icon="sap-icon://menu2" press="onMenuButtonPress" class="customMenuButton" />
+        <Text text="Your Page Title" class="pageTitle" />
+        <HBox alignItems="Center" class="userProfile" press="onUserProfilePress">
+            <Image src="sap-icon://employee" class="userProfileIcon" />
+            <Text text="John Doe" class="userName" />
+        </HBox>
+    </HBox> -->
     <VBox class="hero-container">
         <Text
             text="WELCOME TEST"
@@ -29,14 +37,13 @@
                 <ImageContent src="sap-icon://search" class="tile-icon" />
             </TileContent>
         </GenericTile>
-
         <GenericTile
             class="tileLayout tile-2"
             header="CREATE NEW PROFILE"
             press="createprofile"
         >
             <TileContent>
-                <ImageContent src="sap-icon://employee" class="tile-icon"  />
+                <ImageContent src="sap-icon://person-placeholder" class="tile-icon"  />
             </TileContent>
         </GenericTile>
 

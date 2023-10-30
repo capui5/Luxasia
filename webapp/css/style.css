@@ -68,8 +68,6 @@ span#__tile4-title-inner {
 
 /*Generic tiles icon*/
 .tile-1 .sapMImageContentImageIcon.sapUiIcon::before {
-    content: "\e00d"; 
-    font-family: "SAP-icons";
     font-size: 1.75rem;
     background-color: rgb(8, 78, 88);
     border-radius: 50%;
@@ -82,8 +80,6 @@ span#__tile4-title-inner {
 }
 
 .tile-2 .sapMImageContentImageIcon.sapUiIcon::before {
-    content: "\e0ca"; 
-    font-family: "SAP-icons";
     font-size: 1.75rem;
     background-color: rgb(8, 78, 88);
     border-radius: 50%;
@@ -96,8 +92,6 @@ span#__tile4-title-inner {
 }
 
 .tile-3 .sapMImageContentImageIcon.sapUiIcon::before {
-    content: "\e137"; 
-    font-family: "SAP-icons";
     font-size: 1.75rem;
     background-color: rgb(8, 78, 88);
     border-radius: 50%;
@@ -110,8 +104,6 @@ span#__tile4-title-inner {
 }
 
 .tile-4 .sapMImageContentImageIcon.sapUiIcon::before {
-    content: "\e083"; 
-    font-family: "SAP-icons";
     font-size: 1.75rem;
     background-color: rgb(8, 78, 88);
     border-radius: 50%;
@@ -124,8 +116,6 @@ span#__tile4-title-inner {
 }
 
 .tile-5 .sapMImageContentImageIcon.sapUiIcon::before {
-    content: "\e085"; 
-    font-family: "SAP-icons";
     font-size: 1.75rem;
     background-color: rgb(8, 78, 88);
     border-radius: 50%;
