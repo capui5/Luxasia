@@ -25,21 +25,32 @@
                         width="190px"
                         id="selectbycustomer"
                         placeholder="Filter by Customer"
-                         showSecondaryValues="true"
-                         class="multicombobox"
-                    >
-                     
-                    </MultiComboBox>
+                        showSecondaryValues="true"
+                        class="multicombobox"
+                    />
                     <MultiComboBox
                         change="handleChange"
                         selectionChange="handleSelectionChange"
                         width="190px"
                         id="selectbycampaign"
                         placeholder="Filter by Campaign"
-                         showSecondaryValues="true"
-                         class="multicombobox"
+                        showSecondaryValues="true"
+                        class="multicombobox"
                     >
-                        
+                        <core:Item
+                            key="Special Price"
+                            text="Special Price"
+                        />
+
+                        <core:Item
+                            key="Cart"
+                            text="Cart"
+                        />
+
+                        <core:Item
+                            key="MOM"
+                            text="MOM"
+                        />
                     </MultiComboBox>
                     <MultiComboBox
                         change="handleChange"
@@ -47,41 +58,67 @@
                         width="190px"
                         id="selectbytier"
                         placeholder="Filter by Tier"
-                         showSecondaryValues="true"
-                         class="multicombobox"
-                    >
-                       
-                    </MultiComboBox>
+                        showSecondaryValues="true"
+                        class="multicombobox"
+                    />
                 </contentRight>
             </Bar>
         </customHeader>
 
         <content>
-          <Table id="customerTable" items="{/Customers}" class="myCustomMargin">
+            <Table
+                id="customerTable"
+                items="{/Customers}"
+                class="myCustomMargin"
+            >
                 <columns>
                     <Column>
-                        <Text text="Customers" class="titleText" />
+                        <Text
+                            text="Customers"
+                            class="titleText"
+                        />
                     </Column>
                     <Column>
-                        <Text text="Campaign" class="titleText" />
+                        <Text
+                            text="Campaign"
+                            class="titleText"
+                        />
                     </Column>
                     <Column>
-                        <Text text="Tier" class="titleText" />
+                        <Text
+                            text="Tier"
+                            class="titleText"
+                        />
                     </Column>
                     <Column>
-                        <Text text="Phone#" class="titleText" />
+                        <Text
+                            text="Phone#"
+                            class="titleText"
+                        />
                     </Column>
                     <Column>
-                        <Text text="Date" class="titleText" />
+                        <Text
+                            text="Date"
+                            class="titleText"
+                        />
                     </Column>
                     <Column>
-                        <Text text="Attempts" class="titleText" />
+                        <Text
+                            text="Attempts"
+                            class="titleText"
+                        />
                     </Column>
                     <Column>
-                        <Text text="Notes" class="titleText" />
+                        <Text
+                            text="Notes"
+                            class="titleText"
+                        />
                     </Column>
                     <Column>
-                        <Text text="Status" class="titleText" />
+                        <Text
+                            text="Status"
+                            class="titleText"
+                        />
                     </Column>
                 </columns>
                 <items>

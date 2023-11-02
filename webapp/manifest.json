@@ -126,6 +126,13 @@
           "target": [
             "calllist"
           ]
+        },
+        {
+          "name": "reviewallcampaigns",
+          "pattern": "reviewallcampaigns",
+          "target": [
+            "reviewallcampaigns"
+          ]
         }
       ],
       "targets": {
@@ -170,7 +177,15 @@
           "clearControlAggregation": false,
           "viewId": "calllist",
           "viewName": "calllist"
+        },
+        "reviewallcampaigns":{
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "reviewallcampaigns",
+          "viewName": "reviewallcampaigns"
         }
+
       }
     },
     "rootView": {

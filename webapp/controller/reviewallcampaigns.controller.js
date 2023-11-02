@@ -4,7 +4,7 @@ sap.ui.define([
   ], function (Controller) {
     "use strict";
   
-    return Controller.extend("luxasia.controller.calllist", {
+    return Controller.extend("luxasia.controller.reviewallcampaigns", {
       onInit: function () { },
     
      
